@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom border animation */
+
+/* Custom properties and keyframes for rotating gradient */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.card-gradient {
+  position: relative;
+  background-color: #191c29; /* Fallback color */
+  overflow: hidden;
+}
+
+.card-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108%;
+  height: 104%;
+  
+  background-image: linear-gradient(
+    var(--rotate),
+    #aa3e70,
+    #20b9d4 43%,
+    #692dc4
+  );
+  z-index: -1;
+  animation: spin 15s linear infinite;
+}
+
+.card-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -2;
+  filter: blur(8px);
+  transform: scale(1.2);
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
+@layer components {
+  .card-base {
+      @apply relative h-full bg-slate-800 rounded-3xl p-px overflow-hidden;
+  }
+
+  .card-before {
+      @apply absolute w-80 h-80 -left-40 -top-40 bg-slate-400 rounded-full opacity-0 pointer-events-none transition-opacity duration-500;
+      content: "";
+      transform: translateX(var(--mouse-x)) translateY(var(--mouse-y));
+      z-index: 10;
+      filter: blur(100px);
+  }
+
+  .card-after {
+      @apply absolute w-96 h-96 -left-48 -top-48 bg-indigo-200 rounded-full opacity-0 pointer-events-none transition-opacity duration-500;
+      content: "";
+      transform: translateX(var(--mouse-x)) translateY(var(--mouse-y));
+      z-index: 30;
+      filter: blur(50px);
+  }
+
+  .group-hover .card-before {
+      @apply opacity-100;
+  }
+
+  .card-after:hover {
+      @apply opacity-10;
+  }
+}

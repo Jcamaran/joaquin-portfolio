@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "About Me",
+      "scrollTitle" : "About",
+      "icon": "/wired-gradient-680-it-developer-hover-pinch (1).png",
+      "alt": "Icon representing coding"
+    },
+    {
+      "id": 2,
+      "title": "Projects",
+      "scrollTitle" : "Projects",
+      "icon": "/wired-gradient-742-code-hover-pinch (1).png",
+      "alt": "Icon representing projects"
+    },
+    {
+      "id": 3,
+      "title": "XP",
+      "scrollTitle" : "XP",
+      "icon": "/wired-gradient-187-suitcase-hover-pinch (1).png",
+      "alt": "Icon representing experience"
+    }
+  ]
+  

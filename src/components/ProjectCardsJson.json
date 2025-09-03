@@ -1,0 +1,25 @@
+
+[
+    {
+        "imageSrc": "./public/project_pics/joa.png",
+        "title": "Ring Facial Recognition",
+        "description": "A facial recognition project using my Ring Camera from home to identify visitors and unlock my smartlock"
+    },
+    {
+        "imageSrc": "./public/project_pics/limo1.png",
+        "title": "Limo Booking Website Demo",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora illo minima ea quo."
+    },
+
+    {
+        "imageSrc": "./public/project_pics/fitgen.png",
+        "title": "Historical Document Repository",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusantium commodi eos, voluptate."
+    },
+    {
+        "imageSrc": "./public/project_pics/work.jpg",
+        "title": "Text Classification for Anomoly Detection",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusantium commodi eos, voluptate."
+    }
+    
+]
