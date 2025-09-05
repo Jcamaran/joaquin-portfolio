@@ -1,7 +1,39 @@
 
 
 
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
+// Importing Pictures for site
+
+// About section
+import sacred from "/About/Sacred_Heart_University_seal.png"
+import code from "/About/code.png"
+import chicago from  "/About/chicago.jpg"
+import soccer from  "/About/soccer.jpg"
+import cycle from  "/About/cycle.jpg"
+import camp from  "/About/camp.jpg"
+import moto from  "/About/me_moto.jpg"
+import surf from  "/About/surf.jpg"
+
+// Frameworks
+import tailwind from "/frameworks/Tailwind_CSS_Logo.svg"
+import jsx from "/frameworks/JSX.svg"
+import js from "/frameworks/JS.svg"
+import python from "/frameworks/Python.svg"
+import cprogramming from "/frameworks/Cprogramming.svg"
+import r from "/frameworks/r.png"
+import text from "/frameworks/text.png"
+import linux from "/frameworks/linux.png"
+import mongodb from "/frameworks/mongodb.png"
+import database from "/frameworks/database.png"
+import excel from "/frameworks/excel.png"
+
+// Globe Section
+import globe from "/About/globe3.mp4"
+
+// Email Icon
+import email from "/About/email.png"
+
+
 
 import Spotlight from "./spotlight-effect";
 
@@ -23,13 +55,7 @@ function Slideshow({images, slideMs = 3000, pauseOnHover = true}){
 
 
 const images = [
-"./About/code.png",
-"./About/chicago.jpg",
-"./About/soccer.JPG",
-"./About/cycle.jpg",
-"./About/camp.JPG",
-"./About/me_moto.JPG",
-"./About/surf.jpg"
+code, chicago, soccer, cycle, camp, moto, surf
 ];
 
 const duration = 18; // seconds
@@ -58,18 +84,18 @@ export default function SpotlightCards() {
 
     
     const slidingLogos = [
-        <img  src="./frameworks/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" />,
-        <img  src="./frameworks/JSX.svg" alt="JSX Logo" />,
-        <img  src="./frameworks/JS.svg" alt="JavaScript Logo" />,
-        <img  src="./frameworks/Python.svg" alt="Python Logo" />,
-        <img  src="./frameworks/Cprogramming.svg" alt="C Programming Logo" />,
-        <img  src="./frameworks/r.png" alt="Database Logo" />,
-        <img  src="./frameworks/Tailwind_CSS_Logo.svg" alt="Database Logo" />,
-        <img  src="./frameworks/text.png" alt="Database Logo" />,
-        <img  src="./frameworks/linux.png" alt="Database Logo" />,
-        <img src="./frameworks/mongodb.png" alt="Database Logo" />,
-        <img  src="./frameworks/database.png" alt="Database Logo" />,
-        <img  src="./frameworks/excel.png" alt="Database Logo" />
+        <img  src={tailwind} alt="Tailwind CSS Logo" />,
+        <img  src={jsx} alt="JSX Logo" />,
+        <img  src={js} alt="JavaScript Logo" />,
+        <img  src={python} alt="Python Logo" />,
+        <img  src={cprogramming} alt="C Programming Logo" />,
+        <img  src={r} alt="Database Logo" />,
+        <img  src={text} alt="Database Logo" />,
+        <img  src={linux} alt="Database Logo" />,
+        <img  src={mongodb} alt="Database Logo" />,
+        <img src={database} alt="Database Logo" />,
+        <img  src={excel} alt="Database Logo" />,
+        <img  src={tailwind} alt="Database Logo" />
 
 
     ];
@@ -80,11 +106,11 @@ export default function SpotlightCards() {
         <section
         
             id="About"
-            className=" w-full flex flex-col items-center  justify-center overflow-x-hidden min-h-screen bg-slate-900 antialiased mb-10"
+            className=" w-full flex flex-col items-center  justify-center overflow-x-hidden min-h-screen bg-slate-950 antialiased mb-10"
             >
         
             <h1
-                className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-4xl sm:text-5xl md-text-5xl lg-text-6xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] ">
+                className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-4xl sm:text-5xl md-text-5xl lg-text-6xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
                 About Me
             </h1>
 
@@ -133,7 +159,7 @@ export default function SpotlightCards() {
                                     opacity-0 translate-y-2
                                     group-hover:opacity-100 group-hover:translate-y-0
                                     text-white  font-bold mb-0
-                                    transition-all ease-in-out duration-500 z-10
+                                    transition-all ease-in-out duration-500 z-10 translate-x-1
                                     "
                                 >
                                     Bringing Passion For Everything I Do
@@ -167,8 +193,9 @@ export default function SpotlightCards() {
                                             aria-hidden="true"
                                         ></div>
                                         <img
-                                            className="  items-center justify-center object-scale-down w-24 h-24 md:w-28 md:h-28 sm:w-24 sm:h-24 lg:w-32 lg:h-32"
-                                            src="./Sacred_Heart_University_seal.png"
+                                        src={sacred}
+                                            className=" items-center justify-center object-scale-down w-24 h-24 md:w-28 md:h-28 sm:w-24 sm:h-24 lg:w-32 lg:h-32"
+                                            
                                             alt="SHU Logo"
                                         />
                                     </div>
@@ -235,7 +262,7 @@ export default function SpotlightCards() {
                         </div>
                     </div>
                 </div> 
-                <div className="  relative overflow-x-hidden h-32  sm:h-40 md:h-40 lg:h-full bg-slate-600 rounded-3xl p-px overflow-hidden before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-600 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-1 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] group">
+                <div className=" z-20 relative overflow-x-hidden h-32  sm:h-40 md:h-40 lg:h-full bg-slate-600 rounded-3xl p-px overflow-hidden before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-slate-600 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:hover:opacity-1 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] group">
                        <div className="relative  h-full w-full bg-slate-900 rounded-3xl">
                        
                            
@@ -252,7 +279,7 @@ export default function SpotlightCards() {
 
                                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-48 lg:h-40 flex items-center justify-center">
                                     <video
-                                    src="./About/globe3.mp4"
+                                    src={globe}
                                     autoPlay
                                     loop
                                     muted
@@ -309,7 +336,7 @@ export default function SpotlightCards() {
                                             <p className="text-white  text-sm z-40"></p>
 
                                             <img
-                                                src="./About/email.png"
+                                                src={email}
                                                 alt="Email Icon"
                                                 className="    flex items-center justify-center w-20 h-20 bg-blue-600 p-1 rounded-xl z-40 cursor-pointer border-2 border-blue-400 bg-gradient-to-r from-purple-600 to-pink-300 opacity-80 transition duration-1000 group-hover:opacity-100 group-hover:duration-500 animate-pulseBorder"
                                                 onClick={() => {
@@ -323,10 +350,7 @@ export default function SpotlightCards() {
                                     </div>
                                     
                                 </div>
-
-
                                 {/* this is where an action Action Button woudl go if i were to create one */}
-                            
                             </div>
                         </div>
                     </div>  

@@ -12,7 +12,7 @@ import XP from './components/XP.jsx';
 import { BackgroundBeams } from './components/newPage.jsx';
 function App() {
   return (
-    <div className='relative h-full w-full bg-slate-900 overflow-x-hidden'>
+    <div className='relative h-full w-full bg-slate-950 overflow-x-hidden'>
       {/* Main Content */}
       <Navbar />
       <Home /> 

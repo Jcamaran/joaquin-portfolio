@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import asml_logo from "/Logos/ASML_logo.png"
+import shu from "/Logos/Sacred_Heart_University.png"
+import sikorsky from "/Logos/Sikorsky_Aircraft_Logo.png"
+
 import { Spotlight } from "./Spotlight";
 
 function XP() {
@@ -30,11 +34,11 @@ function XP() {
   return (
     <div
   id="XP"
-  className="w-full flex flex-col overflow-x-hidden min-h-screen bg-slate-200 border-none relative items-center justify-center"
+  className="w-full flex flex-col overflow-x-hidden min-h-screen bg-slate-200 border-none relative items-center justify-center "
 >
   {/* Background Layer */}
   <div className="absolute inset-0 z-0">
-    <div className="absolute inset-0 bg-fuchsia-700 bg-[size:20px_20px] opacity-20 blur-[120px] border-10" />
+    <div className="absolute inset-0 bg-fuchsia-600 bg-[size:20px_20px] opacity-20 blur-[120px] border-10 " />
   </div>
 
   
@@ -42,12 +46,9 @@ function XP() {
       
      
       {/* <div className="relative  inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div> */}
-      <h2 className="flex w-full mt-0 mb-4 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)]">
+      <h2 className="flex w-full mt-0 mb-4 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
         Professional Experience
       </h2>
-      
-  
-      
 
       <section
         id="main_content"
@@ -57,20 +58,14 @@ function XP() {
 
         <div
           id=""
-          className="lg:w-3/6 md:w-5/6 sm:w-5/6 h-5/6 w-5/6 flex  justify-center items-center  translate-x-5 gap-0"
+          className="lg:w-3/6 md:w-5/6 sm:w-5/6 h-5/6 w-5/6 flex  justify-center items-center  translate-x-5 gap-0 z-20"
 
-        >
-
-
-
-
-
-          
+        >          
           <div  ref={ulRef}className ="-my-">
 
             <div className ={`relative p-9 pb-2 sm:pl-32 pl-6 pr-10  group  ${inView ? "animate-slidein1" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
-              <img src="public/Logos/ASML_logo.png" alt="ASML_logo" className=" w-20 border-10 border-white "/>
+              <img src={asml_logo} alt="ASML_logo" className=" w-20 border-10 border-white "/>
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap">ASML</div> */}
               {/* This is the vertriclke connecting line  */}
               <div className="flex flex-col sm:flex-row items-start mb- group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
@@ -88,7 +83,7 @@ function XP() {
             <div className ={`relative p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein2" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap ">Sacred Heart University</div> */}
-              <img src="/Logos/Sacred_Heart_University.png" className=" w-36 border-10 border-white bg-transparent "/>
+              <img src={shu}alt="ASML_logo" className=" w-36 border-10 border-white bg-transparent "/>
 
               {/* This is the vertriclke connecting line  */}
               <div className={` flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5`}>
@@ -110,7 +105,7 @@ function XP() {
             <div className ={`relative  p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein3" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap">Sikorky Historical Archives</div> */}
-              <img src="public/Logos/Sikorsky_Aircraft_Logo.svg.png" alt="shu_logo" className=" w-36 border-10 border-white bg-transparent "/>
+              <img src={sikorsky} alt="ASML_logo" className=" w-36 border-10 border-white bg-transparent "/>
 
               {/* This is the vertriclke connecting line  */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">

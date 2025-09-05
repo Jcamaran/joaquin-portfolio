@@ -14,13 +14,13 @@ function Home() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] animate-spotlight"></div>
 
       {/* Fading Bottom Effect */}
-      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent to-[#0f1620] pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent to-slate-950 pointer-events-none"></div>
 
 
 
 
 
-      <BackgroundCellCore />
+    {/* <BackgroundCellCore /> */}
       <div className=" outline-offset  outline-blur relative z-40 w-full px-0 py-20 min-h-screen flex flex-col justify-center items-center max-w-full pointer-events-none">
         <div className="w-full px-6 lg:px-8 m-4 mb-5 mt-12 text-center max-w-full">
           <div className="animate-slidein max-w-2xl mx-auto ">
@@ -119,7 +119,7 @@ const Pattern = ({ className, cellClassName }) => {
               <div
                 key={`matrix-col-${colIdx}`}
                 className={cn(
-                  "bg-transparent border-l border-b border-neutral-600",
+                  "bg-transparent border-l border-b border-neutral-600 h-full",
                   cellClassName
                 )}
                 onClick={() => setClickedCell([rowIdx, colIdx])}
