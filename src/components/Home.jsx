@@ -10,11 +10,12 @@ function Home() {
       id="Home"
       className="relative flex justify-center items-center h-screen"
     >
+  
       {/* Existing spotlight effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)] animate-spotlight"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_50px,#3e3e3e,transparent)] animate-spotlight"></div>
 
       {/* Fading Bottom Effect */}
-      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent to-slate-950 pointer-events-none"></div>
+      {/* <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent to-slate-950 pointer-events-none opacity-[.1]"></div> */}
 
 
 

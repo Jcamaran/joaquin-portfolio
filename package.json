@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "caniuse-lite": "^1.0.30001739",
     "clsx": "^2.1.1",
     "datamaps": "^0.5.9",
     "gh-pages": "^6.3.0",

@@ -277,14 +277,14 @@ export default function SpotlightCards() {
                                     </h2>
                                 </div>
 
-                                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-48 lg:h-40 flex items-center justify-center">
+                                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-40 lg:h-40 flex items-center justify-center">
                                     <video
                                     src={globe}
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
-                                    className="w-full h-full object-contain  rounded-2xl p-2 group-hover:mr-2 transition-all ease-in-out duration-150 group-hover:scale-105"
+                                    className="w-full h-full object-contain   p-2 group-hover:mr-2 transition-all ease-in-out duration-150 group-hover:scale-105 rounded-full"
                                     />
                                 </div>
                                 </div>

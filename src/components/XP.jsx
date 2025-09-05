@@ -46,7 +46,7 @@ function XP() {
       
      
       {/* <div className="relative  inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div> */}
-      <h2 className="flex w-full mt-0 mb-4 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
+      <h2 className="flex w-full  sm:mt-10 mt-5 mb-0 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-[25px]  sm:text-4xl md-text-3xl lg-text-4xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
         Professional Experience
       </h2>
 
@@ -70,7 +70,7 @@ function XP() {
               {/* This is the vertriclke connecting line  */}
               <div className="flex flex-col sm:flex-row items-start mb- group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-100 bg-indigo-700 rounded-full">May, 2025</time>
-                <div className="text-md sm:text-2xl  md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Data Visualization & Analytics Engineer Intern </div>
+                <div className="text-md sm:text-xl  md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Data Visualization & Analytics Engineer Intern </div>
               </div>
                {/* Mobile view: short version */}
               <div className="text-black text-sm sm:hidden">
@@ -83,17 +83,17 @@ function XP() {
             <div className ={`relative p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein2" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap ">Sacred Heart University</div> */}
-              <img src={shu}alt="ASML_logo" className=" w-36 border-10 border-white bg-transparent "/>
+              <img src={shu}alt="ASML_logo" className=" w-32 border-10 border-white bg-transparent "/>
 
               {/* This is the vertriclke connecting line  */}
               <div className={` flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5`}>
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase sm: w-20 w-15  h-6 mb-3 sm:mb-0 text-emerald-100 bg-indigo-700 rounded-full">Nov, 2024</time>
-                <div className="text-md sm:text-2xl  md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Data Analyst Intern</div>
+                <div className="text-md sm:text-xl  md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Data Analyst Intern</div>
               </div>
           
               {/* Mobile view: short version */}
             <div className="text-black text-sm sm:hidden">
-              Built ML pipelines for sports and weightlifting analytics.
+              Built data pipelines with Python and R to analyze sports data, applied ML to predict weightlifting progress, identified key performance metrics, and co-authored a research paper on weightlifting analysis.
             </div>
 
             {/* Desktop view: full version */}
@@ -105,17 +105,17 @@ function XP() {
             <div className ={`relative  p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein3" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap">Sikorky Historical Archives</div> */}
-              <img src={sikorsky} alt="ASML_logo" className=" w-36 border-10 border-white bg-transparent "/>
+              <img src={sikorsky} alt="ASML_logo" className=" w-32 border-10 border-white bg-transparent "/>
 
               {/* This is the vertriclke connecting line  */}
               <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-900 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-100 bg-indigo-700 rounded-full">May, 2023</time>
-                <div className="text-md sm:text-2xl  md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Database Developer Intern</div>
+                <div className="text-md sm:text-xl md:text-2xl  lg:text-2xl font-bold text-blue-800 ">Database Developer Intern</div>
               </div>
           
                           {/* Mobile view: short version */}
             <div className="text-black text-sm sm:hidden">
-              Analyzed archival systems and built custom data solutions.
+              Analyzed archival database systems, built Python data integration scripts (SQL/MySQL/MongoDB), aligned solutions with organizational needs, and delivered clear presentations and vendor demos to guide system selection.
             </div>
 
             {/* Desktop view: full version */}

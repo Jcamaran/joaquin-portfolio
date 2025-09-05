@@ -26,12 +26,13 @@ export default function Portfolio() {
   return (
     <section
       id="Projects"
-      className="h-screen w-full h flex overflow-x-hidden border-none " 
+      className="h-screen w-full h flex overflow-x-hidden " 
     >
-      <div className="h-full w-full bg-fuchsia-850">
-        {/* Background grid effect */}
-        <div className=" absolute inset-0 -z-2 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:30px_30px] [mask-image:radial-gradient(ellipse_50%_100%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+  
+  
 
+      <div className="h-full w-full bg-fuchsia-850">
+       
         <section
           id="main_content"
           className="h-full w-full flex flex-col items-center justify-center space-x-0 z-0"
@@ -59,7 +60,7 @@ export default function Portfolio() {
                     <img
                     src={pic.src}
                     alt={pic.alt}
-                    className="object-cover rounded-xl relative w-40 h-32 sm:w-64 sm:h-40 md:w-80 md:h-48 lg:w-96 lg:h-60 cursor-pointer overflow-hidden hover:shadow-[10px_10px_0px_#8B5DFF] hover:-translate-x-1  duration-800 transition-all ease-in-out duration-200"
+                    className="object-cover rounded-xl relative w-32 h-24 sm:w-64 sm:h-40 md:w-80 md:h-48 lg:w-96 lg:h-60 cursor-pointer overflow-hidden hover:shadow-[10px_10px_0px_#8B5DFF] hover:-translate-x-1  duration-800 transition-all ease-in-out duration-200"
                     />
                 </div>
                 ))}
