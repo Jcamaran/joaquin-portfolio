@@ -8,7 +8,7 @@ function Home() {
   return (
     <section
       id="Home"
-      className="relative flex justify-center items-center h-screen"
+      className="relative flex justify-center items-center min-h-screen "
     >
   
       {/* Existing spotlight effect */}
@@ -22,24 +22,23 @@ function Home() {
 
 
     {/* <BackgroundCellCore /> */}
-      <div className=" outline-offset  outline-blur relative z-40 w-full px-0 py-20 min-h-screen flex flex-col justify-center items-center max-w-full pointer-events-none">
-        <div className="w-full px-6 lg:px-8 m-4 mb-5 mt-12 text-center max-w-full">
-          <div className="animate-slidein max-w-2xl mx-auto ">
-            <p className="mb-2 text-md sm:text-lg md:text-lg text-white">Where Ideas Meet Reality</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white lg:text-6xl">
-              Welcome To <span className="text-blue-400">J-CODE</span>,
-              Joaquin's Programming Portfolio
+      <div className=" outline-offset  outline-blur relative z-40 w-full px-0 py-20 min-h-screen flex flex-col justify-center items-center max-w-full pointer-events-none ">
+        <div className="w-full px-6 lg:px-8 m-4 mb-2 mt-12 text-center max-w-full">
+          <div className="animate-slidein max-w-2xl mx-auto  ">
+            <p className="mb-2 text-sm sm:text-md md:text-lg text-white transition-all ease-in-out duration-300" >Joaquin's Programming Portolfio</p>
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white lg:text-6xl transition-all ease-in-out duration-300">
+              Welcome To <span className="text-blue-400 whitespace-nowrap">J-CODE</span>
+              {/* <span className="hidden sm:block">,Joaquin's Programming Portfolio</span> */}
             </h2>
-            <p className="mt-2 text-md sm:text-lg md:text-lg text-white">Learn More About Me</p>
+            <p className="mt-4 text-sm sm:text-md md:text-lg text-white">Learn More About Me</p>
           </div>
         </div>
         {/* ArrowDownwardIcon with slide-in animation */}
         <ArrowDownwardIcon
-          fontSize="large"
           style={{ color: "#38bdf8" }}
-          className=" mt-0 mb-0"
+          className="text-xl sm:text-4xl md:text-5xl lg:text-6xl mt-0 mb-0"
         />
-        <h2 className="text-white text-center text-xl font-pixelify tracking-wide px-4  z-20 bg-inherit">
+        <h2 className="text-white text-center text-md  tracking-wide px-4  z-20 bg-inherit">
           QuickLinks
         </h2>
         <div className="flex sm:flex-row justify-center items-center w-full max-w-full pointer-events-auto">

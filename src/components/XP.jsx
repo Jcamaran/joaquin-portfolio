@@ -17,7 +17,7 @@ function XP() {
           setInView(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     if (ulRef.current) {
@@ -46,7 +46,7 @@ function XP() {
       
      
       {/* <div className="relative  inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div> */}
-      <h2 className="flex w-full  sm:mt-10 mt-5 mb-0 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-[25px]  sm:text-4xl md-text-3xl lg-text-4xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
+      <h2 className="flex w-full  sm:mt-10 mt-5 mb-0 justify-center text-[40px]  relative top-0  h-auto py-3   bg-gradient-to-r items-center from-sky-600 to-violet-600 bg-clip-text text-[24px]  sm:text-4xl md-text-3xl lg-text-4xl font-extrabold text-transparent text-center select-auto drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] z-20 ">
         Professional Experience
       </h2>
 
@@ -77,7 +77,7 @@ function XP() {
                 Built an NLP app with Python, Streamlit, and Databricks to predict root cause codes and speed up anomaly resolution, and delivered real-time BI tools for workflow insights...
               </div>
           
-              <div className=" text-black text-md hidden sm:block">Developed an NLP application with Python, Streamlit, and Databricks to predict root cause codes from operator text entries, reducing anomaly resolution time. Trained and fine-tuned five ML models (SVC, Logistic Regression, XGBoost, Random Forest, Naive Bayes) to optimize performance, and delivered real-time BI tools for workflow insights while collaborating in an Agile/Scrum environment with GitLab version control.</div>
+              <div className=" text-black  text-sm md:text-sm lg:text-[16px] hidden sm:block">Developed an NLP application with Python, Streamlit, and Databricks to predict root cause codes from operator text entries, reducing anomaly resolution time. Trained and fine-tuned five ML models (SVC, Logistic Regression, XGBoost, Random Forest, Naive Bayes) to optimize performance, and delivered real-time BI tools for workflow insights while collaborating in an Agile/Scrum environment with GitLab version control.</div>
             </div>
 
             <div className ={`relative p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein2" : "opacity-0"}`}>
@@ -97,12 +97,12 @@ function XP() {
             </div>
 
             {/* Desktop view: full version */}
-            <div className="text-black text-md hidden sm:block">
+            <div className="text-black  text-sm md:text-sm lg:text-[16px]  hidden sm:block ">
               Built data pipelines using BeautifulSoup, NumPy, and Matplotlib to extract and analyze sports data, and used R for statistical analysis and visualization. Applied machine learning to predict weightlifting progression and identify key performance indicators. Contributed to the release of a research paper on weightlifting analysis using ML and conducted predictive feature importance studies on basketball datasets to uncover impactful training metrics.
             </div>
 
             </div>
-            <div className ={`relative  p-9 sm:pl-32 py-4 pl-6 pr-10 group  ${inView ? "animate-slidein3" : "opacity-0"}`}>
+            <div className ={`relative  p-9 sm:pl-32 pt-1  pl-6 pr-10 group  ${inView ? "animate-slidein3" : "opacity-0"}`}>
               {/* This areat has the pruple label */}
               {/* <div className="font-caveat font-medium text-lg sm:text-2xl text-blue-400 indigo-300 mb-1 sm:mh-0 whitespace-nowrap">Sikorky Historical Archives</div> */}
               <img src={sikorsky} alt="ASML_logo" className=" w-32 border-10 border-white bg-transparent "/>
@@ -119,7 +119,7 @@ function XP() {
             </div>
 
             {/* Desktop view: full version */}
-            <div className="text-black text-md hidden sm:block">
+            <div className="text-black text-sm md:text-sm lg:text-[16px] hidden sm:block">
               Led a comprehensive analysis of archival database systems, identifying key areas for improvement in workflows and data management. Developed custom data integration scripts in Python for SQL, MySQL, and MongoDB. Collaborated closely with the archives team to align technical initiatives with organizational needs. Presented complex technical findings in clear, actionable terms and facilitated product demos with vendors to support informed system selection.
             </div>
 
