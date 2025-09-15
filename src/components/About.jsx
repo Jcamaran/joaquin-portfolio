@@ -1,10 +1,13 @@
 
 
-
 import  { useEffect, useRef, useState } from "react";
-// Importing Pictures for site
+
+
+
+import Slideshow from "./fadingImages";
 
 // About section
+import next from "/About/Nextjs.png"
 import sacred from "/About/Sacred_Heart_University_seal.png"
 import code from "/About/code.png"
 import chicago from  "/About/chicago.jpg"
@@ -13,6 +16,7 @@ import cycle from  "/About/cycle.jpg"
 import camp from  "/About/camp.jpg"
 import moto from  "/About/me_moto.jpg"
 import surf from  "/About/surf.jpg"
+import azure from "/About/azure.png"
 
 // Frameworks
 import tailwind from "/frameworks/Tailwind_CSS_Logo.svg"
@@ -26,7 +30,6 @@ import linux from "/frameworks/linux.png"
 import mongodb from "/frameworks/mongodb.png"
 import database from "/frameworks/database.png"
 import excel from "/frameworks/excel.png"
-
 // Globe Section
 import globe from "/About/globe3.mp4"
 
@@ -34,22 +37,8 @@ import globe from "/About/globe3.mp4"
 import email from "/About/email.png"
 
 
-
 import Spotlight from "./spotlight-effect";
 
-function Slideshow({images, slideMs = 3000, pauseOnHover = true}){
-    const[active,setActive] = useState(0);
-    const[paused, setPaused] = useState(false);
-
-    // Advance the slide on an interval
-    useEffect(() => {
-        if (images.length <= 1 || paused) return;
-        const id = setInterval(() => {
-        setActive((i) => (i + 1) % images.length);
-        }, slideMs);
-        return () => clearInterval(id);
-    }, [images.length, slideMs, paused]);
-}
 
 
 
@@ -69,8 +58,11 @@ export default function SpotlightCards() {
   
     useEffect(() => {
       let spotlightInstance;
-  
-      if (containerRef.current) {
+
+      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      const isDesktop = window.innerWidth >= 1024; // Example breakpoint for desktop
+
+      if (containerRef.current && isDesktop && !isTouch) {
         spotlightInstance = new Spotlight(containerRef.current);
       }
   
@@ -88,14 +80,14 @@ export default function SpotlightCards() {
         <img  src={jsx} alt="JSX Logo" />,
         <img  src={js} alt="JavaScript Logo" />,
         <img  src={python} alt="Python Logo" />,
-        <img  src={cprogramming} alt="C Programming Logo" />,
-        <img  src={r} alt="Database Logo" />,
-        <img  src={text} alt="Database Logo" />,
-        <img  src={linux} alt="Database Logo" />,
-        <img  src={mongodb} alt="Database Logo" />,
+        <img  src={next} alt="next" />,
+        <img  src={r} alt="R Programming" />,
+        <img  src={text} alt="text" />,
+        <img  src={mongodb} alt="mongodb" />,
         <img src={database} alt="Database Logo" />,
-        <img  src={excel} alt="Database Logo" />,
-        <img  src={tailwind} alt="Database Logo" />
+        <img  src={linux} alt="linux" />,
+        <img  src={excel} alt="excel" />,
+        <img  src={azure} alt="azure" />
 
 
     ];
@@ -140,17 +132,7 @@ export default function SpotlightCards() {
                            <div className="relative group w-full h-full">
                                 {/* Slideshow Images */}
                                 <div className="relative w-full h-full transition-transform duration-500 group-hover:scale-90">
-                                  {images.map((src, index) => (
-                                    <img
-                                    key={index}
-                                    src={src}
-                                    className="absolute inset-0 w-full h-full object-cover rounded-xl animate-fade"
-                                    style={{
-                                        animationDuration: `${duration}s`,
-                                        animationDelay: `${index * interval}s`
-                                    }}
-                                    />
-                                ))}
+                                    <Slideshow images={images} slideMs={3000} pauseOnHover={true} />
                                 </div>
    
                                 <h2
@@ -221,7 +203,7 @@ export default function SpotlightCards() {
                             
                             md:mx-0">
                                 {slidingLogos.map((logo, index) => (
-                                    <div key={index} className="border border-slate-400 w-8 h-8 p-0 bg-blue-700 sm:w-7 sm:h-7 sm:p-[2px] md:h-9 md:w-9 lg:h-12 lg:w-12 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 ease-in-out group-hover:scale-105">
+                                    <div key={index} className="border border-slate-400 w-7 h-7 p-[0.9px] bg-blue-700 sm:w-7 sm:h-7 sm:p-[2px] md:h-9 md:w-9 lg:h-12 lg:w-12 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 ease-in-out group-hover:scale-105">
                                     {logo}
                                     </div>
                                 ))}
